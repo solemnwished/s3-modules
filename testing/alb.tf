@@ -10,9 +10,10 @@ module "alb" {
   subnets            = ["subnet-0deae1e4599021132", "subnet-0d96daf7187936af5"]
   security_groups    = ["sg-0f9d23348623e6d8a", "sg-0f9d23348623e6d8a"]
 
-#  access_logs = {
-#    bucket = "ndn-${var.env}"
-#  }
+  # access_logs = {
+  #   bucket = "my-s3-logs"
+  #   #bucket = "ndn-${var.env}"
+  # }
 
   target_groups = [
     {
